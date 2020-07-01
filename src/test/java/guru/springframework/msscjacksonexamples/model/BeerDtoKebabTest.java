@@ -1,17 +1,17 @@
 package guru.springframework.msscjacksonexamples.model;
 
+
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.autoconfigure.json.JsonTest;
 import org.springframework.test.context.ActiveProfiles;
 
-@ActiveProfiles("snake")
+@ActiveProfiles("kebab")
 @JsonTest
-public class BeertDtoSnakeTest extends BaseTest{
-
+public class BeerDtoKebabTest extends BaseTest{
 
     @Test
-    void testSnake() throws JsonProcessingException {
+    void testKebab() throws JsonProcessingException {
         BeerDto beerDto = getDto();
 
         String json = objectMapper.writeValueAsString(beerDto);
